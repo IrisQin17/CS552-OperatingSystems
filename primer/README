@@ -1,0 +1,17 @@
+Bowen Qin
+BU ID: U32803059
+
+* KBD
+
+** Explaination
+For the keyboard driver, I use interrupts to get keyboard info from kernel to user level.
+
+** Reference
+http://tldp.org/LDP/lkmpg/2.6/html/x1256.html>
+
+** Instruction
+> make -C /usr/src/linux-`uname -r` SUBDIRS=$PWD modules
+> gcc test.c
+> insmod module.ko
+> ./a.out
+> rmmod module
